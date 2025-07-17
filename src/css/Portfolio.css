@@ -1,0 +1,7 @@
+.animated-detail-text {
+  animation: fadeInText 0.7s ease;
+}
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+} 
