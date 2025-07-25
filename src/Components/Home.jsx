@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NewProfile from '../assets/image/newProfile.jpeg';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   const [skillsAnimation, setSkillsAnimation] = useState([]);
@@ -52,7 +53,7 @@ function Home() {
   }, [skillsAnimation]);
 
   const [typewriter] = useTypewriter({
-    words: ['frontend', 'backend', 'fullstack', 'NextJS', 'ReactJS', 'JSP', 'Servlet'],
+    words: ['ReactJS', 'ExpressJS', 'JSP', 'Servlet', 'MongoDB'],
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 40,
@@ -69,7 +70,7 @@ function Home() {
                 Hello, I'm <span>Rabison Rajshakya</span>
               </h1>
               <p className='fs-3'>I am studying <span>{typewriter}</span><Cursor /></p>
-              <button type="button">Download CV</button>
+              <NavLink to="./CV/Rabisoncv.pdf" target="_blank" rel="noopener noreferrer"><button type="button">Download CV</button></NavLink>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 col-12">
               <img src={NewProfile} alt="Rabison Rajshakya Profile" className="img-fluid rounded-circle img-thumbnail" />
@@ -121,13 +122,6 @@ function Home() {
                 <span className="skill"><span>reactjs</span> <i className="val">80%</i></span>
                 <div className="progress-bar-wrap">
                   <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>{/* End Skills Item */}
-
-              <div className="progress">
-                <span className="skill"><span>nextjs</span> <i className="val">90%</i></span>
-                <div className="progress-bar-wrap">
-                  <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>{/* End Skills Item */}
 

@@ -209,7 +209,6 @@ body {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -221,7 +220,7 @@ body {
 }
 
 /* Content wrapper */
-.about>* {
+.about > * {
   position: relative;
   z-index: 2;
 }
@@ -250,7 +249,7 @@ body {
 }
 
 /* Intro paragraph */
-.about>p {
+.about > p {
   color: #f8f9fa;
   font-size: 1.1rem;
   text-align: center;
@@ -349,7 +348,6 @@ body {
 }
 
 @keyframes imageFloat {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -411,7 +409,8 @@ body {
   }
 
   to {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -480,7 +479,6 @@ body {
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     opacity: 1;
@@ -569,7 +567,11 @@ body {
   right: 10%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatAround 15s linear infinite;
   z-index: 1;
@@ -622,7 +624,7 @@ body {
 }
 
 /* Content wrapper */
-.skills>* {
+.skills > * {
   position: relative;
   z-index: 2;
 }
@@ -749,7 +751,12 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   animation: shimmer 2s infinite;
 }
 
@@ -818,7 +825,11 @@ body {
   right: 10%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatAround 20s linear infinite;
   z-index: 1;
@@ -901,7 +912,7 @@ body {
 }
 
 /* Content wrapper */
-.resume>* {
+.resume > * {
   position: relative;
   z-index: 2;
 }
@@ -1028,7 +1039,11 @@ body {
   right: 10%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatAround 20s linear infinite;
   z-index: 1;
@@ -1111,7 +1126,7 @@ body {
 }
 
 /* Content wrapper */
-.resume>* {
+.resume > * {
   position: relative;
   z-index: 2;
 }
@@ -1298,7 +1313,11 @@ body {
   right: 10%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatAround 20s linear infinite;
   z-index: 1;
@@ -1411,13 +1430,7 @@ body {
   }
 }
 
-/*--------------------------------------------------------------
-        # Portfolio Section
-        --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio {
+.project {
   position: relative;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   width: 100vw;
@@ -1426,12 +1439,12 @@ body {
   overflow: hidden;
 }
 
-.portfolio h1 {
+.project h1 {
   color: #fff;
   animation: fadeInBounce 1.5s ease-out;
 }
 
-.portfolio-overlay {
+.project-overlay {
   content: "";
   position: absolute;
   top: 0;
@@ -1442,7 +1455,7 @@ body {
   z-index: 1;
 }
 
-.portfolio>* {
+.project > * {
   position: relative;
   z-index: 2;
 }
@@ -1475,11 +1488,11 @@ body {
   animation: fadeInSlide 1.2s ease-out 0.5s both;
 }
 
-.portfolio .container {
+.project .container {
   animation: fadeIn 1s ease-out 0.3s both;
 }
 
-.portfolio-card {
+.project-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -1490,19 +1503,19 @@ body {
   overflow: hidden;
 }
 
-.portfolio-card:nth-child(1) {
+.project-card:nth-child(1) {
   animation-delay: 0.2s;
 }
 
-.portfolio-card:nth-child(2) {
+.project-card:nth-child(2) {
   animation-delay: 0.4s;
 }
 
-.portfolio-card:nth-child(3) {
+.project-card:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.portfolio-card:hover {
+.project-card:hover {
   transform: translateY(-10px) rotateX(5deg);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
   animation: cardPulse 0.6s ease-in-out;
@@ -1521,7 +1534,7 @@ body {
   animation: imageFloat 3s ease-in-out infinite;
 }
 
-.portfolio-card:hover .card-img-top {
+.project-card:hover .card-img-top {
   transform: scale(1.1) rotate(2deg);
   animation: imageZoomRotate 0.8s ease-in-out;
 }
@@ -1555,36 +1568,45 @@ body {
   border-radius: 25px;
   padding: 0.5rem 1.5rem;
   transition: all 0.3s ease;
-  animation: buttonBounce 1s ease-out 1.4s both;
+  /* animation: buttonBounce 1s ease-out 1.4s both; */
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px) scale(1.05);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
   box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
-  animation: buttonHover 0.3s ease-in-out;
+  /* animation: buttonHover 0.3s ease-in-out; */
 }
 
-.portfolio::after {
+.project::after {
   content: "";
   position: absolute;
   top: 15%;
   right: 10%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatAround 20s linear infinite;
   z-index: 1;
 }
 
-.portfolio::before {
+.project::before {
   content: "";
   position: absolute;
   bottom: 10%;
   left: 5%;
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle, rgba(78, 205, 196, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(78, 205, 196, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatReverse 15s linear infinite;
   z-index: 1;
@@ -1614,7 +1636,8 @@ body {
   }
 
   100% {
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3),
+      0 0 20px rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -1631,7 +1654,6 @@ body {
 }
 
 @keyframes cardPulse {
-
   0%,
   100% {
     transform: translateY(-10px) rotateX(5deg) scale(1);
@@ -1643,7 +1665,6 @@ body {
 }
 
 @keyframes imageFloat {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1813,7 +1834,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .portfolio {
+  .project {
     padding: 60px 0;
   }
 
@@ -1821,7 +1842,7 @@ body {
     font-size: 2rem;
   }
 
-  .portfolio-card {
+  .project-card {
     margin: 1rem 0;
   }
 }
@@ -1860,7 +1881,6 @@ body {
 }
 
 @keyframes contactFloat {
-
   0%,
   100% {
     transform: translateY(0px) scale(1);
@@ -1871,7 +1891,7 @@ body {
   }
 }
 
-.contact>* {
+.contact > * {
   position: relative;
   z-index: 2;
 }
@@ -1952,7 +1972,6 @@ body {
 }
 
 @keyframes contactImageFloat {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -2018,7 +2037,6 @@ body {
 }
 
 @keyframes footerFloat {
-
   0%,
   100% {
     transform: translateY(0px) scale(1);
@@ -2030,7 +2048,8 @@ body {
 }
 
 @keyframes footerSectionFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -2038,7 +2057,7 @@ body {
   }
 }
 
-.footer-section>* {
+.footer-section > * {
   position: relative;
   z-index: 2;
 }
@@ -2102,8 +2121,6 @@ body {
   transform: scale(1.2);
   color: #ffd700;
 }
-
-
 
 .footer-text {
   color: rgba(255, 255, 255, 0.9);
@@ -2188,7 +2205,7 @@ body {
   z-index: 1;
 }
 
-.services>* {
+.services > * {
   position: relative;
   z-index: 2;
 }
@@ -2318,7 +2335,11 @@ body {
   right: 10%;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatAround 20s linear infinite;
   z-index: 1;
@@ -2331,7 +2352,11 @@ body {
   left: 5%;
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle, rgba(78, 205, 196, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(78, 205, 196, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: floatReverse 15s linear infinite;
   z-index: 1;
@@ -2361,7 +2386,8 @@ body {
   }
 
   100% {
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3),
+      0 0 20px rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -2378,7 +2404,6 @@ body {
 }
 
 @keyframes cardPulse {
-
   0%,
   100% {
     transform: translateY(-10px) rotateX(5deg) scale(1);
@@ -2390,7 +2415,6 @@ body {
 }
 
 @keyframes imageFloat {
-
   0%,
   100% {
     transform: translateY(0);
@@ -2449,7 +2473,7 @@ body {
   }
 }
 
-@keyframes buttonBounce {
+/* @keyframes buttonBounce {
   0% {
     opacity: 0;
     transform: translateY(20px) scale(0.8);
@@ -2478,7 +2502,7 @@ body {
   100% {
     transform: translateY(-2px) scale(1.05);
   }
-}
+} */
 
 @keyframes floatReverse {
   0% {
@@ -2571,7 +2595,6 @@ body {
     margin: 1rem 0;
   }
 }
-
 @media (max-width: 576px) {
   .section-title h2 {
     font-size: 1.5rem;

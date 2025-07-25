@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/style.css';
+import '../assets/css/style.css';
 function Services() {
   return (
     <div className="services">

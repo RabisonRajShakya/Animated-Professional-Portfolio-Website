@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../css/style.css';
+import '../assets/css/style.css';
 import 'boxicons/css/boxicons.min.css';
 
 function Footer() {
@@ -14,7 +14,7 @@ function Footer() {
               <li><Link to="/" className="text-white text-decoration-none"><i className='bx bx-home'></i> Home</Link></li>
               <li><Link to="/about" className="text-white text-decoration-none"><i className='bx bx-user'></i> About</Link></li>
               <li><Link to="/resume" className="text-white text-decoration-none"><i className='bx bx-file'></i> Resume</Link></li>
-              <li><Link to="/portfolio" className="text-white text-decoration-none"><i className='bx bx-image'></i> Portfolio</Link></li>
+              <li><Link to="/project" className="text-white text-decoration-none"><i className='bx bx-image'></i> Project</Link></li>
               <li><Link to="/services" className="text-white text-decoration-none"><i className='bx bx-cog'></i> Services</Link></li>
               <li><Link to="/contact" className="text-white text-decoration-none"><i className='bx bx-phone'></i> Contact</Link></li>
             </ul>
