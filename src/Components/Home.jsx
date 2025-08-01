@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NewProfile from '../assets/image/newProfile.jpeg';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { NavLink } from 'react-router-dom';
-
+import boxicons from 'boxicons';
 function Home() {
   const [skillsAnimation, setSkillsAnimation] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
@@ -70,7 +70,7 @@ function Home() {
                 Hello, I'm <span>Rabison Rajshakya</span>
               </h1>
               <p className='fs-3'>I am studying <span>{typewriter}</span><Cursor /></p>
-              <NavLink to="./CV/Rabisoncv.pdf" target="_blank" rel="noopener noreferrer"><button type="button">Download CV</button></NavLink>
+              <NavLink to="./CV/Rabisoncv.pdf" target="_blank" rel="noopener noreferrer"><button type="button"><i className='bx bx-download'>Download CV</i></button></NavLink>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 col-12">
               <img src={NewProfile} alt="Rabison Rajshakya Profile" className="img-fluid rounded-circle img-thumbnail" />
@@ -123,6 +123,14 @@ function Home() {
                 <div className="progress-bar-wrap">
                   <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+              </div>{/* End Skills Item */}
+
+              <div className="progress">
+                <span className="skill"><span>NodeJS and ExpressJS</span> <i className="val">60%</i></span>
+                <div className="progress-bar-wrap">
+                  <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
               </div>{/* End Skills Item */}
 
               <div className="progress">

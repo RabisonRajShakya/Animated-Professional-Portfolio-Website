@@ -26,8 +26,8 @@ function Project() {
     <section className='project'>
       <h1 className='text-center my-5 py-5 fw-bold '>Project</h1>
       <div className="container">
-        <div className="row my-5 py-5">
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div className="row my-4 py-4">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={HTML} className="card-img-top" alt="HTML" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -45,7 +45,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={CSS} className="card-img-top" alt="CSS" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -63,7 +63,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={JS} className="card-img-top" alt="JavaScript" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -74,14 +74,14 @@ function Project() {
                 </button>
                 {showJsDetails && (
                   <div className="mt-3">
-                    <p>I enabled users to add, edit, and delete tasks, with persistent data stored in the browser’s local storage.</p>
+                    <p>I enabled users to add, edit, and delete tasks, with persistent data stored in the browser's local storage.</p>
                   </div>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12 my-5">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={REACT} className="card-img-top" alt="ReactJS" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -99,7 +99,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12 my-5">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={NODEJS} className="card-img-top" alt="NodeJS" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -117,7 +117,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12 my-5">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={EXPRESSJS} className="card-img-top" alt="ExpressJS" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -135,7 +135,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={JSP} className="card-img-top" alt="JSP" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -153,7 +153,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={SERVLET} className="card-img-top" alt="Servlet" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -171,7 +171,7 @@ function Project() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div className="col-sm-12 col-md-4 col-lg-4 col-12 mb-4">
             <div className="card w-100 h-100 d-flex flex-column">
               <img src={JAVA} className="card-img-top" alt="Java GUI" style={{ height: '200px', objectFit: 'contain' }} />
               <div className="card-body d-flex flex-column flex-grow-1">
@@ -188,7 +188,6 @@ function Project() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

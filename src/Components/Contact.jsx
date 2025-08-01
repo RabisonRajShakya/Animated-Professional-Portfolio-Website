@@ -12,6 +12,7 @@ function Contact() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -63,8 +64,10 @@ function Contact() {
       });
       setErrors({});
       setSubmitted(false);
+      setShowPopup(false);
     } else {
       setErrors(newErrors);
+      setShowPopup(true);
     }
   };
 
@@ -79,14 +82,14 @@ function Contact() {
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="Email" className="form-label text-white fs-4">
-                  Email address
+                  Email address:
                 </label>
                 <input
                   type="email"
                   className="form-control text-start"
                   id="Email"
                   aria-describedby="emailHelp"
-                  placeholder={submitted && errors.email ? errors.email : "Enter your email"}
+                  placeholder={submitted && !formData.email ? "Please fill the input field" : "Enter your email"}
                   value={formData.email}
                   onChange={handleInputChange}
                   style={submitted && errors.email ? { borderColor: '#a94442', color: '#a94442' } : {}}
@@ -94,13 +97,13 @@ function Contact() {
               </div>
               <div className="mb-3">
                 <label htmlFor="Phone" className="form-label text-white fs-4">
-                  Phone Number
+                  Phone Number:
                 </label>
                 <input
                   type="Phone"
                   className="form-control text-start"
                   id="Phone"
-                  placeholder={submitted && errors.phone ? errors.phone : "Enter your phone number"}
+                  placeholder={submitted && !formData.phone ? "Please fill the input field" : "Enter your phone number"}
                   value={formData.phone}
                   onChange={handleInputChange}
                   style={submitted && errors.phone ? { borderColor: '#a94442', color: '#a94442' } : {}}
@@ -111,13 +114,13 @@ function Contact() {
                   htmlFor="Password"
                   className="form-label text-white fs-4"
                 >
-                  Password
+                  Password:
                 </label>
                 <input
                   type="password"
                   className="form-control text-start"
                   id="Password"
-                  placeholder={submitted && errors.password ? errors.password : "Enter your password"}
+                  placeholder={submitted && !formData.password ? "Please fill the input field" : "Enter your password"}
                   value={formData.password}
                   onChange={handleInputChange}
                   style={submitted && errors.password ? { borderColor: '#a94442', color: '#a94442' } : {}}
@@ -136,7 +139,7 @@ function Contact() {
             <img
               src={NewProfile}
               alt=""
-              className="img-fluid img-thumbnail rounded-circle"
+              className="img-fluid img-thumbnail rounded-circle my-4"
             />
           </div>
         </div>

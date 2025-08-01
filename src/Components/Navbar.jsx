@@ -10,7 +10,7 @@ function Navbar() {
         <NavLink className="navbar-brand text-uppercase fw-bold fs-4 d-flex align-items-center" to="#">
           <span style={{
             display: 'inline-block',
-            padding: '4px 16px',
+            padding: '3px 16px',
             borderRadius: '18px',
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
             color: '#fff',
@@ -61,10 +61,10 @@ function Navbar() {
             </li>
           </ul>
           {/* Social Media Icons */}
-          <div className="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0 ">
-            <NavLink to="https://www.instagram.com/rabisonshakya6/" target="_blank" rel="noopener noreferrer" className="text-white fs-3 px-2"><i className='bx bxl-instagram'></i></NavLink>
-            <NavLink to="https://github.com/RabisonRajShakya/Animated-Professional-Portfolio-Website" target="_blank" rel="noopener noreferrer" className="text-white fs-3 px-2"><i className='bx bxl-github'></i></NavLink>
-            <NavLink to="https://www.linkedin.com/in/rabison-raj-shakya-7521a7370/" target="_blank" rel="noopener noreferrer" className="text-white fs-3 px-2"><i className='bx bxl-linkedin'></i></NavLink>
+          <div className="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0  social-icons">
+            <NavLink to="https://www.instagram.com/rabisonshakya6/" target="_blank" rel="noopener noreferrer" className="text-white fs-3"><i className='bx bxl-instagram p-0'></i></NavLink>
+            <NavLink to="https://github.com/RabisonRajShakya/Animated-Professional-Portfolio-Website" target="_blank" rel="noopener noreferrer" className="text-white fs-3 p-0"><i className='bx bxl-github'></i></NavLink>
+            <NavLink to="https://www.linkedin.com/in/rabison-raj-shakya-7521a7370/" target="_blank" rel="noopener noreferrer" className="text-white fs-3"><i className='bx bxl-linkedin p-0'></i></NavLink>
           </div>
         </div>
       </div>

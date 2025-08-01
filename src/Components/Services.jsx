@@ -11,7 +11,7 @@ function Services() {
               <div className="card-body">
                 <h5 className="card-title">Web Development</h5>
                 <p className="card-text">
-                  Responsive websites using HTML, CSS, Bootstrap, ReactJS, and NextJS. I can build modern, user-friendly web applications.
+                  Responsive websites using HTML, CSS, Bootstrap, ReactJS. I can build modern, user-friendly web applications.
                 </p>
               </div>
             </div>

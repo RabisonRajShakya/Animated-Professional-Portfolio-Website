@@ -1,6 +1,6 @@
 import React from 'react'
 import NewProfile from '../assets/image/newProfile.jpeg';
-import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import '../assets/css/style.css';
 
 function About() {
@@ -21,13 +21,13 @@ function About() {
             <div className="row">
               <div className="col-md-6">
                 <h2 className='text-capitalize fw-bold fs-4 mb-3'>Birthday: 30th december 2001</h2>
-                <h2 className='fw-bold fs-4 mb-3'>Website: <Link to="https://rabisonrajshakya.com.np" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>rabisonrajshakya.com.np</Link></h2>
+                {/* <h2 className='fw-bold fs-4 mb-3'>Website: <NavLink to="https://rabisonrajshakya.com.np" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>rabisonrajshakya.com.np</NavLink></h2> */}
                 <h2 className='text-capitalize fw-bold fs-4 mb-3'>phone: +977 9861492520</h2>
                 <h2 className='text-capitalize fw-bold fs-4 mb-3'>city: Kathmandu, Nepal</h2>
               </div>
               <div className="col-md-6">
                 <h2 className='text-capitalize fw-bold fs-4 mb-3'>age: 24</h2>
-                <h2 className='text-capitalize fw-bold fs-4 mb-3'>degree: bachelor hons computing</h2>
+                <h2 className='text-capitalize fw-bold fs-4 mb-3'>degree: BSC hons computing</h2>
                 <h2 className='fw-bold fs-4 mb-3' style={{wordBreak: 'break-all'}}>Email: info@rabisonrajshakya.com.np</h2>
                 <h2 className='text-capitalize fw-bold fs-4 mb-3'>internship:searching</h2>
               </div>

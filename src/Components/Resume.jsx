@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/style.css";
-import {Link } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 function Resume() {
 	return (
 		<section className="resume">
@@ -101,26 +101,26 @@ function Resume() {
 										Academic Project
 									</h3>
 									<ul>
-										<li className="text-capitalize">
+										<NavLink to="https://github.com/aastha0077/SmartTech" target="_blank"><li className="text-capitalize">
 											smart tech ecommerce website
-										</li>
-										<li className="text-capitalize">
+										</li></NavLink>
+										<NavLink to="https://github.com/RabisonRaj/Printer-ecommerce-website" target="_blank"><li className="text-capitalize">
 											printer ecommerce website
-										</li>
-										<li className="text-capitalize">
+										</li></NavLink>
+										<NavLink to="https://github.com/RabisonRaj/GUI-Java" target="_blank"><li className="text-capitalize">
 											GUI using java
-										</li>
+										</li></NavLink>
 									</ul>
 									<h3 className="text-capitalize fw-bold text-white my-4">
 										Personal Project
 									</h3>
 									<ul>
-										<li className="text-capitalize">
+										<NavLink to="https://github.com/RabisonRaj/New-SM-Traders-Nepal" target="_blank"><li className="text-capitalize">
 											smart traders nepal ecommerce website
-										</li>
-										<li className="text-capitalize">
+										</li></NavLink>
+										<NavLink to="https://github.com/RabisonRaj/Joyti-Traders-Nepal" target="_blank"><li className="text-capitalize">
 											joyti traders nepal ecommerce website
-										</li>
+										</li></NavLink>
 									</ul>
 								</div>
 							</div>
@@ -128,28 +128,28 @@ function Resume() {
 							<div className="resume-item mb-4">
 								<h3 className="resume-title">Training and Certification</h3>
 								<div className="resume-content mb-3">
-									<Link to="https://www.credly.com/badges/63c6c5ea-f335-42ad-a114-86b6d5194223/print" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+									<NavLink to="https://www.credly.com/badges/63c6c5ea-f335-42ad-a114-86b6d5194223/print" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
 										<h4 className="text-white">AWS CERTIFICATION</h4>
-									</Link>
+									</NavLink>
 									<h5 className="text-white">
 										ISLINGTION COLLEGE, KAMALPHOKHARI / 2024
 									</h5>
 								</div>
 								<div className="resume-content mb-3">
-									<Link to="https://github.com/RabisonRaj/Mern-Stack-Certification/blob/main/Deerwalk%20Certification.pdf" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+									<NavLink to="https://github.com/RabisonRaj/Mern-Stack-Certification/blob/main/Deerwalk%20Certification.pdf" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
 										<h4 className="text-white">MERN STACK</h4>
-									</Link>
+									</NavLink>
 									<h5 className="text-white">DEER WALK / 2022</h5>
 								</div>
 								<div className="resume-content">
-									<Link to="https://github.com/RabisonRaj/globalIT-certification/blob/main/Global%20IT%20Certification.pdf" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+									<NavLink to="https://github.com/RabisonRaj/globalIT-certification/blob/main/Global%20IT%20Certification.pdf" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
 										<h4 className="text-white">GLOBAL IT</h4>
-									</Link>
+									</NavLink>
 									<h5 className="text-white">2020</h5>
-									<p className="text-white">
+									{/* <p className="text-white">
 										I have completed comprehensive training in HTML, CSS, and
 										the Bootstrap framework through Global IT.
-									</p>
+									</p> */}
 								</div>
 							</div>
 						</div>
