@@ -15,7 +15,7 @@ function About() {
             <img src={NewProfile} alt="Rabison Rajshakya Profile" className="img-fluid rounded-circle img-thumbnail" />
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6 col-12">
-            <h1 className='text-uppercase fw-bold fs-3'>bachelor hons computing student</h1>
+            <h1 className='text-uppercase fw-bold fs-3'>BSC hons computing student</h1>
             <p>I gained a solid foundation in software development, systems design, databases, networking, and web technologies while pursuing my BSc (Hons) in Computing. In addition to helping me solve real-world issues, the course enhanced my programming and critical thinking abilities by fusing theory with hands-on projects. Working on group projects and utilizing industry-standard tools enhanced my problem-solving and communication skills. This degree stoked my desire for lifelong learning in the tech industry and well-prepared me for jobs in ReactJS, Express, and HTML, CSS, and JavaScript.
             </p>
             <div className="row">
@@ -39,4 +39,4 @@ function About() {
   )
 }
 
-export default About
+export default About;
